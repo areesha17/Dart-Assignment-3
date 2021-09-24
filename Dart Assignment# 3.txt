@@ -1,0 +1,175 @@
+// Question 1:
+// ANSWERE:
+void main() {
+  final ball_List = ["Ball ()","Ball ()","Ball ()","Ball ()","Ball ()"];
+  final unique_ballList = ball_List.toSet().toList();
+  print (unique_ballList);
+}
+
+
+
+// Question 2:
+// ANSWERE:
+void main() {
+  var a = [1, 2, 3, 4, 5, 6, 7];
+  var b = [3, 5, 6, 7, 9, 10];
+  a.removeWhere((e) => b.contains(e));
+  print(a);
+}
+
+
+
+// Question 3:
+// ANSWERE:
+void main() {
+  var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+  var evens = [
+    for (var i in a)
+      if (i % 2 == 0) i
+  ];
+  print(evens);
+}
+
+
+
+// Question 4:
+// ANSWERE:
+void main() {
+  var a = 7;
+  if (a%2==0){
+    print ("${a} is Not a Prime Number");
+  }
+  else{
+    print ("${a} is a Prime Number");
+  }
+}
+
+
+
+
+// Question 5:
+// ANSWERE:
+void main() {
+  for (int i = 1; i <= 15; i++) {
+    print('7 x ${i} = ${7*i}');
+  }
+}
+
+
+
+// Question 6:
+// ANSWERE:
+void main() {
+  var fruits = ["apple","banana","mango","orange","strawberry"];
+  for (var i in fruits){
+    print (i);
+  }
+}  
+
+
+
+// Question 7:
+// ANSWERE:
+void main() {
+   var i = 0; 
+  while (i < 100){
+    i = i + 5;
+    print (i); 
+  } 
+}
+
+
+
+
+// Question 8:
+// ANSWERE:
+void main() {
+  num celsius_temperature = 20;
+  num fahrenheit_conversion = (celsius_temperature * 9/5) + 32;
+  print ("Celsius Temperature is ${celsius_temperature} degree and when it convert into Fahrenheit is${fahrenheit_conversion} degree");
+  num fahrenheit_temperature = 35;
+  num celsius_conversion = (fahrenheit_temperature - 32) * (5/9);
+  print ("Fahrenheit Temperature is ${fahrenheit_temperature} degree and when it convert into Celsius is ${celsius_temperature} degree");  
+}
+
+
+
+// Question 9:
+// ANSWERE:
+void main() {
+  print("----Menu----");
+  print("1. Addition");
+  print("2. Subtraction");
+  print("3. Multiplication");
+  print("4. Division");
+  print("5. Remainder");
+  print("6. Exit");
+  print("------------------");
+
+  int choice1 = 1;
+  int choice2 = 2;
+  int choice3 = 3;
+  num choice4 = 4;
+  int choice5 = 5;
+  int choice6 = 6;
+
+  int a = 5;
+  int b = 8;
+
+  if (choice1 == 1) {
+    print("${a} + ${b}");
+    int add = a + b;
+    print("Sum = ${add}");
+    print("------------------");
+  } 
+  else if (choice2 == 2) {
+    print("${a} - ${b}");
+    int subtract = a - b;
+    print("Difference = ${subtract}");
+    print("------------------");
+  }
+  else if (choice3 == 3) {
+    print("${a} * ${b}");
+    int multiply = a * b;
+    print("Product = ${multiply}");
+    print("------------------");
+  }
+  else if (choice4 == 4) {
+    print("${a} / ${b}");
+    num divide = a / b;
+    print("Division = ${divide}");
+    print("------------------");
+  }
+  else if (choice5 == 5) {
+    print("${a} % ${b}");
+    int remainder = a % b;
+    print("Remainder = ${remainder}");
+    print("------------------");
+  }
+  else{
+    print("Exit");
+  }
+}
+
+
+
+// Question 10:
+// ANSWERE:
+void main() {
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+  var ch = 'p';
+  if (vowels[0] == ch) {
+    print("True");
+  } else if (vowels[1] == ch) {
+    print("True");
+  } else if (vowels[2] == ch) {
+    print("True");
+  } else if (vowels[3] == ch) {
+    print("True");
+  } else if (vowels[4] == ch) {
+    print("True");
+  } else {
+    print("False");
+  }
+}
+
